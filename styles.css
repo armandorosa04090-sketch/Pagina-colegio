@@ -356,12 +356,14 @@ a {
     font-size: 1.1rem;
     text-align: left;
     width: auto;
+    margin-left: 18px; /* alinear el nombre con el inicio del enlace 'Inicio' */
   }
 
   .nav-links {
     width: 100%;
     justify-content: flex-start;
     gap: 14px;
+    padding-left: 18px; /* asegurar que los enlaces comiencen en la misma columna */
   }
 
   .hero-content,
