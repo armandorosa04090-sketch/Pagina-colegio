@@ -353,17 +353,22 @@ a {
   }
 
   .brand {
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: left;
     width: auto;
-    margin-left: 18px; /* alinear el nombre con el inicio del enlace 'Inicio' */
+    margin-left: 12px; /* más reducido para no estorbar el logo */
   }
 
   .nav-links {
     width: 100%;
     justify-content: flex-start;
-    gap: 14px;
-    padding-left: 18px; /* asegurar que los enlaces comiencen en la misma columna */
+    gap: 10px;
+    padding-left: 12px; /* ajustar inicio de enlaces */
+  }
+
+  .nav-links a {
+    font-size: 0.9rem; /* texto más pequeño en móvil */
+    padding: 4px 6px;
   }
 
   .hero-content,
@@ -381,14 +386,15 @@ a {
 
   .hero {
     position: relative;
+    padding-right: 100px; /* reservar menos espacio que antes para el logo */
   }
 
   .hero-card {
     position: absolute;
-    top: 30px;
-    right: 18px;
-    width: 86px;
-    height: 86px;
+    top: 20px;
+    right: 12px;
+    width: 72px;
+    height: 72px;
     padding: 8px;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 18px;
