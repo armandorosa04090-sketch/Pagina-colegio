@@ -34,7 +34,7 @@ header {
 .hero {
   background: linear-gradient(135deg, var(--primary-dark), var(--primary));
   color: var(--white);
-  padding: 110px 24px 60px;
+  padding: 140px 24px 60px;
 }
 
 .navbar {
@@ -375,7 +375,7 @@ header {
 
 @media (max-width: 850px) {
   .hero {
-    padding: 30px 18px 34px;
+    padding: 130px 18px 34px;
   }
 
   .navbar {
@@ -394,13 +394,13 @@ header {
   .nav-links {
     width: 100%;
     justify-content: flex-start;
-    gap: 10px;
-    padding-left: 12px; /* ajustar inicio de enlaces */
+    gap: 6px;
+    padding-left: 10px; /* ajustar inicio de enlaces */
   }
 
   .nav-links a {
-    font-size: 0.9rem; /* texto más pequeño en móvil */
-    padding: 4px 6px;
+    font-size: 0.8rem; /* texto más pequeño en móvil */
+    padding: 2px 4px;
   }
 
   .hero-content,
