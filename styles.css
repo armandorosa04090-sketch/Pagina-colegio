@@ -86,14 +86,19 @@ header {
 
 .nav-links {
   display: flex;
-  gap: 18px;
+  gap: 8px;
+  flex-wrap: nowrap;
   list-style: none;
   flex-wrap: wrap;
 }
 
 .nav-links a {
   color: rgba(255, 255, 255, 0.95);
-  font-weight: 500;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.86rem;
+  display: inline-block;
 }
 
 .hero-content {
@@ -476,12 +481,13 @@ header {
     width: 100%;
     justify-content: flex-start;
     gap: 6px;
-    padding-left: 10px; /* ajustar inicio de enlaces */
+    padding-left: 6px; /* ajustar inicio de enlaces */
+    flex-wrap: wrap; /* allow wrapping on small screens */
   }
 
   .nav-links a {
-    font-size: 0.8rem; /* texto más pequeño en móvil */
-    padding: 2px 4px;
+    font-size: 0.82rem; /* texto más pequeño en móvil */
+    padding: 2px 6px;
   }
 
   .hero-content,
