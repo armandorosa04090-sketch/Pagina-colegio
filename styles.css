@@ -257,6 +257,11 @@ header {
   color: #f4a21a;
 }
 
+/* Ajuste: subir ligeramente la sección de idiomas */
+.languages {
+  margin-top: -28px;
+}
+
 .academics-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(250px, 1fr));
@@ -316,8 +321,8 @@ header {
   border-top-color: var(--accent);
 }
 .value-item:nth-child(4) {
-  background: #2c1f49;
-  border-top-color: var(--purple);
+  background: #123e30;
+  border-top-color: var(--green);
 }
 .value-item h3,
 .value-item p,
@@ -548,5 +553,10 @@ header {
   .academic-image {
     height: 200px;
     border-radius: 12px;
+  }
+
+  /* Móvil: menos ajuste para evitar solapamientos */
+  .languages {
+    margin-top: -10px;
   }
 }
