@@ -761,6 +761,14 @@ p,
     border-radius: 12px;
   }
 
+  /* Show full image for Educación Media on mobile to avoid cropping */
+  .academic-image.full-mobile {
+    height: auto;
+    object-fit: contain;
+    max-height: 360px;
+    width: 100%;
+  }
+
   /* Móvil: menos ajuste para evitar solapamientos */
   .languages {
     margin-top: -10px;
