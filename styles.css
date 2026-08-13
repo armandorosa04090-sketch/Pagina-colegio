@@ -806,4 +806,11 @@ p,
   .languages {
     margin-top: -10px;
   }
+
+  /* Make the Programa trilingüe image appear larger inside its card without changing the card size */
+  .languages .academic-card .academic-image {
+    transform: scale(1.12);
+    transform-origin: center top;
+    transition: transform 220ms ease;
+  }
 }
