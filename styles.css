@@ -383,6 +383,16 @@ header {
   text-align: center;
 }
 
+/* CTA button under gallery */
+.gallery-cta {
+  text-align: center;
+  margin-top: 18px;
+}
+.gallery-cta .btn {
+  padding: 12px 22px;
+  border-radius: 999px;
+}
+
 .contact {
   padding-bottom: 90px;
 }
