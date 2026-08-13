@@ -533,6 +533,19 @@ header {
   }
 }
 
+/* Desktop: center the languages/program card when there's a single item */
+@media (min-width: 900px) {
+  .languages .academics-grid {
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 520px));
+  }
+
+  .languages .academics-grid .academic-card {
+    max-width: 520px;
+    margin: 0;
+  }
+}
+
 /* Desktop: dos columnas para sección matrícula */
 @media (min-width: 900px) {
   .enrollment .enroll-grid {
