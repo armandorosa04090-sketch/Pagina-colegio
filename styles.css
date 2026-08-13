@@ -546,6 +546,26 @@ header {
   }
 }
 
+/* Center only the Educación Media card on desktop (leave Inicial/Básica as-is) */
+@media (min-width: 900px) {
+  #oferta .academics-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    align-items: start;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* Keep first two cards in the two columns; place the third spanning both and centered */
+  #oferta .academics-grid .academic-card:nth-child(3) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    max-width: 520px;
+    margin: 0;
+  }
+}
+
 /* Desktop: dos columnas para sección matrícula */
 @media (min-width: 900px) {
   .enrollment .enroll-grid {
