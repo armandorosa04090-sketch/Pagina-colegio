@@ -117,7 +117,7 @@ header {
 
 .eyebrow {
   text-transform: uppercase;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.12em;
   font-size: 0.8rem;
   font-weight: 700;
   color: var(--accent);
@@ -189,6 +189,16 @@ header {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.16);
 }
 
+/* Espaciado entre imágenes: galerías, tarjetas y secciones */
+.gallery-item img,
+.academic-image,
+.hero-card img,
+.enroll-image img,
+.platform-box img {
+  display: block;
+  margin-bottom: 14px;
+}
+
 .section {
     max-width: 1100px;
     margin: 0 auto;
@@ -225,7 +235,8 @@ header {
   border-top: 4px solid transparent;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 12px;
 }
 .card:nth-child(1) {
   background: #0f172a;
@@ -433,6 +444,81 @@ header {
   padding: 32px 24px;
   border-radius: 18px;
 }
+
+/* Estilos para la sección de matrícula 2027 */
+.enrollment .enroll-grid {
+  display: grid;
+  grid-template-columns: 1fr 520px;
+  gap: 40px;
+  align-items: start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.enrollment .enroll-content p {
+  color: var(--white);
+  font-size: 1.05rem;
+  margin-bottom: 18px;
+}
+.enrollment .enroll-image {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  align-items: start;
+}
+.enrollment .enroll-image img {
+  width: 100%;
+  max-width: 520px; /* increase main image size */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+  display: block;
+}
+.enroll-cta .btn {
+  margin-right: 12px;
+}
+
+/* Imágenes apiladas a la izquierda (bajo botones) */
+.side-images {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 18px;
+}
+.side-images {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 18px;
+  align-items: center; /* center so layout looks balanced */
+}
+.side-images img {
+  width: 100%;
+  max-width: 480px; /* increase left stacked images size to match main */
+  border-radius: 12px;
+  box-shadow: 0 10px 26px rgba(0,0,0,0.14);
+  display: block;
+}
+
+@media (max-width: 850px) {
+  .enrollment .enroll-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .enrollment .enroll-image {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+  .side-images {
+    flex-direction: column;
+    align-items: center;
+  }
+  .side-images img {
+    max-width: 100%;
+  }
+  .enrollment .enroll-image img {
+    max-width: 100%;
+  }
+}
 .platform-box h2 {
   color: var(--white);
   margin-bottom: 8px;
@@ -457,6 +543,47 @@ header {
   padding: 24px;
   color: var(--white);
   background: var(--primary-dark);
+}
+
+/* Justificar texto para párrafos y contenido de tarjetas */
+p,
+.card p,
+.academic-content p,
+.platform-box p,
+.hero-text p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Clase utilitaria por si se quiere aplicar selectivamente */
+.text-justify {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Evitar justificación y controlar alineación de las 'eyebrow' por contexto */
+.eyebrow {
+  text-justify: none;
+  white-space: normal;
+}
+
+/* Centrar las eyebrow dentro de encabezados de sección (vista PC) */
+.section-header .eyebrow {
+  display: block;
+  text-align: center;
+}
+
+/* Mantener eyebrow alineada a la izquierda en el hero y cajas pequeñas */
+.hero-text .eyebrow,
+.platform-box .eyebrow {
+  display: block;
+  text-align: left;
+}
+
+/* Contact box usa eyebrow centrada */
+.contact-box .eyebrow {
+  display: block;
+  text-align: center;
 }
 
 @media (max-width: 850px) {
