@@ -412,6 +412,9 @@ header {
 }
 .social.fb { background: #1877f2; }
 .social.wa { background: #25d366; color: var(--white); }
+/* mail button: use site red */
+.social.mail { background: var(--red); color: var(--white); }
+.social.mail:hover { opacity: 0.95; transform: translateY(-2px); }
 
 /* Ubicación */
 .location .section-header { margin-bottom: 18px; }
@@ -524,9 +527,9 @@ header {
 @media (min-width: 900px) {
   .enrollment .enroll-grid {
     display: grid;
-    grid-template-columns: minmax(300px, 40%) minmax(300px, 60%);
+    grid-template-columns: minmax(300px, 48%) minmax(300px, 52%);
     grid-template-rows: auto auto auto;
-    gap: 40px;
+    gap: 36px;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -559,9 +562,9 @@ header {
   .enrollment .enroll-image img:nth-child(2) {
     grid-column: 1;
     grid-row: 2;
-    justify-self: start;
+    justify-self: center;
     width: 100%;
-    max-width: 480px;
+    max-width: 720px;
     height: auto;
     max-height: 920px;
     display: block;
@@ -571,9 +574,9 @@ header {
   .enrollment .enroll-image img:nth-child(3) {
     grid-column: 1;
     grid-row: 3;
-    justify-self: start;
+    justify-self: center;
     width: 100%;
-    max-width: 480px;
+    max-width: 720px;
     height: auto;
     max-height: 920px;
     display: block;
